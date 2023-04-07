@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+
+<ng-template #anotherBlock>
+  <p>Olá, sou um bloco secreto.</p>
+</ng-template>
+
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+<app-comp-atributos>
+  <h2>Olá</h2>
+  <p>Eu vim de fora</p>
+</app-comp-atributos>
